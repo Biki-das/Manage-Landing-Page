@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+}
+
+/* slider styles */
+
+.slick-slide {
+  margin: 100px 10px;
+  transform: translateY(-20%);
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  list-style-type: none;
+}
+
+li {
+  margin: 0 0.25rem;
+}
+
+li > button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 2px solid hsl(12, 88%, 59%);
+  border-radius: 100%;
+  background-color: orange;
+  text-indent: -9999px;
+}
+
+li.slick-active button {
+  background-color: hsl(12, 88%, 59%);
+}
+
+i {
+  color: white;
+  transition: color 0.3s;
+}
+
+i:hover {
+  color: hsl(12, 88%, 59%);
+}
